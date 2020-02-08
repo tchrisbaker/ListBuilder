@@ -3,8 +3,15 @@
 
     doInit : function (component, event, helper) {
         //console.log('NOCCasesRelatedToService init');
-        helper.setupData(component, event, helper);
-        var searchTerm = 'Cloud';
+    },
+    // aura method
+    load : function(component, event, helper) {
+        var params = event.getParam('arguments');
+        if (params) {
+            var param1 = params.dataToLoad;
+            component.set('v.data', param1);
+            helper.setupData(component, event, helper);    
+        }
         
     },
     handleRowAction: function (component, event, helper) {

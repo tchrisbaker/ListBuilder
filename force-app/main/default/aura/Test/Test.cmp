@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:ListBuilder aura:id="listBuilder"  />
+</aura:component>	

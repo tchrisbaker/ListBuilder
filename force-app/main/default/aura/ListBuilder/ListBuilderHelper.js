@@ -22,7 +22,9 @@
             {label: 'Name', fieldName: 'Name', type: 'text'}
            
         ]);
-        var data1 = {
+        component.set('v.filteredData',component.get('v.data'));
+        
+        /*var data1 = {
             id: 'a',
             Name: 'chris'
         };
@@ -36,6 +38,7 @@
         };
         component.set('v.filteredData', [data1, data2, data3]);
         component.set('v.data', [data1, data2, data3]);
+        */
     },
     addRecord : function(component, row) {
         var rowName = row.Name;
