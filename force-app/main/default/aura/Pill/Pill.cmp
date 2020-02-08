@@ -1,0 +1,8 @@
+<aura:component>
+
+    <aura:attribute name="pillLabel" type="String" />
+
+    <aura:registerEvent name="selectedRemoved" type="c:GenericEvt"/>
+
+    <lightning:pill label="{!v.pillLabel}" onremove="{! c.handleRemove }"/>
+</aura:component>	

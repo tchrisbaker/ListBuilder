@@ -1,0 +1,4 @@
+<aura:component>
+    <aura:attribute name="pillLabel" type="String" />
+    <lightning:pill label="{!v.pillLabel}" onremove="{! c.handleRemove }"/>
+</aura:component>	
